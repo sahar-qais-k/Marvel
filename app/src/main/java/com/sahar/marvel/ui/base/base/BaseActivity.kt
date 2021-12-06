@@ -1,4 +1,4 @@
-package com.sahar.marvel.ui.base
+package com.sahar.marvel.ui.base.base
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -8,6 +8,7 @@ import com.sahar.marvel.BR
 
 
 abstract class BaseActivity<VDB : ViewDataBinding> : AppCompatActivity() {
+
     abstract val theme: Int
     abstract val viewID: Int
     abstract val viewModel: ViewModel
@@ -20,4 +21,5 @@ abstract class BaseActivity<VDB : ViewDataBinding> : AppCompatActivity() {
         _binding.setVariable(BR.viewModel, viewModel)
         _binding.lifecycleOwner = this
     }
+
 }

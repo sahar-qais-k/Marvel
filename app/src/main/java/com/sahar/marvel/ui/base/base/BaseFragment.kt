@@ -1,4 +1,4 @@
-package com.sahar.marvel.ui.base
+package com.sahar.marvel.ui.base.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import com.sahar.marvel.BR
 
 abstract class BaseFragment<VDB : ViewDataBinding> : Fragment() {
+
     abstract val viewModel: ViewModel
     abstract val inflate: (LayoutInflater, ViewGroup?, attachToRoot: Boolean) -> VDB
     private lateinit var _binding: VDB

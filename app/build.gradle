@@ -36,6 +36,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -60,4 +63,15 @@ dependencies {
 
     // Recycler LayoutManager
     implementation('com.mig35:carousellayoutmanager:1.4.6')
+
+    // OTHER
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'androidx.fragment:fragment-ktx:1.4.0'
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.8'
 }

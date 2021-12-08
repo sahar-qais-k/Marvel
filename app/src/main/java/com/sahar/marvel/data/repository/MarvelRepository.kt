@@ -1,9 +1,9 @@
-package com.sahar.marvel.model.repository
+package com.sahar.marvel.data.repository
 
-import com.sahar.marvel.model.State
-import com.sahar.marvel.model.remote.API
-import com.sahar.marvel.model.remote.response.characters.Characters
-import com.sahar.marvel.model.remote.response.characters.Result
+import com.sahar.marvel.data.State
+import com.sahar.marvel.data.remote.API
+import com.sahar.marvel.data.remote.response.characters.BaseResponse
+import com.sahar.marvel.data.remote.response.characters.CharacterDto
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.Response
@@ -26,9 +26,13 @@ object MarvelRepository :IMarvelRepository{
         }
     }
 
-    override fun getCharacter(): Flow<State<Characters<Result>?>> {
+    override fun getCharacter(): Flow<State<BaseResponse<CharacterDto>?>> {
         return wrapWithFlow {
             API.apiService.getCharacters()
         }
+    }
+
+    override suspend fun refreshCharacters() {
+
     }
 }

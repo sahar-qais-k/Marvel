@@ -1,9 +1,9 @@
-package com.sahar.marvel.model.remote.response.characters
+package com.sahar.marvel.data.remote.response.characters
 
 
 import com.google.gson.annotations.SerializedName
 
-data class ItemX(
+data class Item(
     @SerializedName("name")
     val name: String? = null,
     @SerializedName("resourceURI")

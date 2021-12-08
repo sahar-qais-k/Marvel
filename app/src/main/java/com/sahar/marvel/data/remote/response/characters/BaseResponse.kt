@@ -1,9 +1,9 @@
-package com.sahar.marvel.model.remote.response.characters
+package com.sahar.marvel.data.remote.response.characters
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Characters<T>(
+data class BaseResponse<T>(
     @SerializedName("attributionHTML")
     val attributionHTML: String? = null,
     @SerializedName("attributionText")

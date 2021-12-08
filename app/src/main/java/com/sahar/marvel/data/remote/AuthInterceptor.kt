@@ -1,4 +1,4 @@
-package com.sahar.marvel.model.remote
+package com.sahar.marvel.data.remote
 
 import com.sahar.marvel.BuildConfig
 import com.sahar.marvel.utils.md5

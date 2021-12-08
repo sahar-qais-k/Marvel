@@ -1,4 +1,4 @@
-package com.sahar.marvel.model
+package com.sahar.marvel.data
 
 sealed class State<out T> {
     data class Success<T>(val data: T) : State<T>()

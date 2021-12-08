@@ -6,9 +6,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.sahar.marvel.AdapterDiffUtil
+import com.sahar.marvel.utils.AdapterDiffUtil
 import com.sahar.marvel.BR
-import com.sahar.marvel.ui.base.base.BaseInteractionListener
 
 
 abstract class BaseAdapter<T>(

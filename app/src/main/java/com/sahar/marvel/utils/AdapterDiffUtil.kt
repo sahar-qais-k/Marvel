@@ -1,4 +1,4 @@
-package com.sahar.marvel
+package com.sahar.marvel.utils
 
 import androidx.recyclerview.widget.DiffUtil
 

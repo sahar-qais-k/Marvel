@@ -13,7 +13,7 @@
 
         <variable
             name="listener"
-            type="com.sahar.marvel.ui.base.base.BaseInteractionListener" />
+            type="com.sahar.marvel.ui.base.BaseInteractionListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

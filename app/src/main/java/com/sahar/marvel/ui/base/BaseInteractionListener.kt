@@ -1,4 +1,4 @@
-package com.sahar.marvel.ui.base.base
+package com.sahar.marvel.ui.base
 
 interface BaseInteractionListener {
 

@@ -6,6 +6,6 @@
     app:startDestination="@id/homeFragment2">
     <fragment
         android:id="@+id/homeFragment2"
-        android:name="com.sahar.marvel.ui.base.home.HomeFragment"
+        android:name="com.sahar.marvel.ui.home.HomeFragment"
         android:label="HomeFragment" />
 </navigation>

@@ -7,8 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.sahar.marvel.databinding.FragmentHomeBinding
-import com.sahar.marvel.ui.base.base.BaseFragment
-import com.sahar.marvel.ui.base.home.HomeViewModel
+import com.sahar.marvel.ui.base.BaseFragment
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override val viewModel: HomeViewModel by activityViewModels()
@@ -18,8 +17,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.characters.observe(this, {
-            it.toData()?.data?.results?.get(0)?.let { it1 -> Log.i("resultb", it1.toString()) }
-        })
+        initAdapter()
+//        viewModel.characters.observe(this, {
+//             Log.i("resultb",  it[0].imageUrl)
+//        })
+    }
+    private fun initAdapter() {
+        binding.charactersRecycler.adapter = CharacterAdapter(mutableListOf(), viewModel)
     }
 }

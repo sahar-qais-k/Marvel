@@ -1,10 +1,11 @@
-package com.sahar.marvel.ui.base.base
+package com.sahar.marvel.ui.base
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModel
 import com.sahar.marvel.BR
+import com.sahar.marvel.data.local.MarvelDatabase
 
 
 abstract class BaseActivity<VDB : ViewDataBinding> : AppCompatActivity() {
@@ -20,6 +21,8 @@ abstract class BaseActivity<VDB : ViewDataBinding> : AppCompatActivity() {
         _binding = DataBindingUtil.setContentView(this, viewID)
         _binding.setVariable(BR.viewModel, viewModel)
         _binding.lifecycleOwner = this
+        MarvelDatabase.init(applicationContext)
+
     }
 
 }

@@ -1,4 +1,4 @@
-package com.sahar.marvel.ui.base.base
+package com.sahar.marvel.ui.base
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

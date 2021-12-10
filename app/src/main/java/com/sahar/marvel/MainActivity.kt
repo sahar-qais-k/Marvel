@@ -1,9 +1,11 @@
 package com.sahar.marvel
 
+import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.navigation.findNavController
+import com.sahar.marvel.data.local.MarvelDatabase
 import com.sahar.marvel.databinding.ActivityMainBinding
-import com.sahar.marvel.ui.base.base.BaseActivity
+import com.sahar.marvel.ui.base.BaseActivity
 import com.sahar.marvel.utils.onNavDestinationSelected
 
 class MainActivity : BaseActivity<ActivityMainBinding>(){

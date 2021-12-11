@@ -23,6 +23,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 //        })
     }
     private fun initAdapter() {
-        binding.charactersRecycler.adapter = CharacterAdapter(mutableListOf(), viewModel)
+        binding.charactersRecycler.adapter = CharacterAdapter(viewModel.characters.value?.toData() ?: emptyList(), viewModel)
     }
 }

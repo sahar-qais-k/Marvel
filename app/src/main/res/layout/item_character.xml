@@ -5,7 +5,7 @@
     <data>
         <variable
             name="item"
-            type="com.sahar.marvel.data.local.entity.CharacterEntity" />
+            type="com.sahar.marvel.data.domain.models.Character" />
         <variable
             name="listener"
             type="com.sahar.marvel.ui.base.BaseInteractionListener" />

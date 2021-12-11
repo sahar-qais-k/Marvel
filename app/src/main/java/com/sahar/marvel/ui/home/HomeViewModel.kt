@@ -17,9 +17,4 @@ class HomeViewModel : BaseViewModel() ,CharacterInteractionListener{
 
     private val repository: IMarvelRepository = MarvelRepository()
     val characters : LiveData<State<List<Character>?>> = repository.getCharacter().asLiveData(Dispatchers.IO)
-//    init {
-//        viewModelScope.launch {
-//            repository.refreshCharacters()
-//        }
-//    }
 }

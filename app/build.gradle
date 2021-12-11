@@ -20,7 +20,6 @@ android {
         buildConfigField "String", "PUBLIC_API_KEY", localProperties['publicAPIKey']
         buildConfigField "String", "PRIVATE_API_KEY", localProperties['privateAPIkey']
         buildConfigField "String", "BASE_API_URL", "\"https://gateway.marvel.com:443/v1/public/\""
-        buildConfigField "String", "BASE_IMAGE_URL", "\"https://terrigen-cdn-dev.marvel.com/content/prod/1x/\""
 
 
 

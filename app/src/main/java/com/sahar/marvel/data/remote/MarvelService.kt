@@ -13,22 +13,4 @@ import retrofit2.http.GET
 interface MarvelService {
     @GET("characters")
     suspend fun getCharacters() : Response<BaseResponse<CharacterDto>>
-
-    companion object{
-        private val client = OkHttpClient
-            .Builder()
-            .addInterceptor(HttpLoggingInterceptor().apply {
-                setLevel(HttpLoggingInterceptor.Level.BODY)
-            }).addInterceptor(AuthInterceptor())
-            .build()
-
-        private val retrofit = Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_API_URL)
-            .client(client)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        val apiService = retrofit.create(MarvelService::class.java)
-
-    }
 }

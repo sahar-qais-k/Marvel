@@ -7,10 +7,12 @@ import com.sahar.marvel.data.local.MarvelDatabase
 import com.sahar.marvel.databinding.ActivityMainBinding
 import com.sahar.marvel.ui.base.BaseActivity
 import com.sahar.marvel.utils.onNavDestinationSelected
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(){
 
-    override val theme = R.style.Theme_Marvel
+//    override val theme = R.style.Theme_Marvel
     override val viewID = R.layout.activity_main
     override val viewModel: MainViewModel by viewModels()
 

@@ -6,10 +6,13 @@ import com.sahar.marvel.data.domain.models.Character
 import com.sahar.marvel.data.remote.MarvelService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class MarvelRepository :IMarvelRepository{
-    private val apiService = MarvelService.apiService
-    private val characterMapper = CharacterDtoToCharacter()
+class MarvelRepository @Inject constructor(
+    private val apiService : MarvelService,
+    private val characterMapper : CharacterDtoToCharacter
+) :IMarvelRepository{
+
 
     override fun getCharacter(): Flow<State<List<Character>?>>{
         return flow {

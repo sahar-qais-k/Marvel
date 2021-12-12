@@ -10,7 +10,7 @@ import com.sahar.marvel.data.local.MarvelDatabase
 
 abstract class BaseActivity<VDB : ViewDataBinding> : AppCompatActivity() {
 
-    abstract val theme: Int
+//    abstract val theme: Int
     abstract val viewID: Int
     abstract val viewModel: ViewModel
     private lateinit var _binding: VDB

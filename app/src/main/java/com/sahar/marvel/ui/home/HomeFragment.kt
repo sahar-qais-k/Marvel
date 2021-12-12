@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.sahar.marvel.databinding.FragmentHomeBinding
 import com.sahar.marvel.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override val viewModel: HomeViewModel by activityViewModels()
     override val inflate: (LayoutInflater, ViewGroup?, attachToRoot: Boolean) -> FragmentHomeBinding

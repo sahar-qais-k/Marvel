@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "160718007869",
+    "project_id": "marveldb-ed59a",
+    "storage_bucket": "marveldb-ed59a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160718007869:android:aed776de883ea9bdcc0454",
+        "android_client_info": {
+          "package_name": "com.sahar.marvel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160718007869-vrf931p6ejc6vtqupsfsm5sqa2ufe7sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRUEf7mqV9fBFwwUnbsAHn_-PpsrX5pTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160718007869-vrf931p6ejc6vtqupsfsm5sqa2ufe7sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

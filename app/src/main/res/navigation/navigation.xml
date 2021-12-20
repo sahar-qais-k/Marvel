@@ -7,5 +7,11 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.sahar.marvel.ui.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.sahar.marvel.ui.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search"/>
 </navigation>

@@ -6,6 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface IMarvelRepository {
     fun getCharacter(): Flow<State<List<Character>?>>
+    fun search(name: String): Flow<State<List<Character>?>>
 
 //    suspend fun refreshCharacters()
 }
